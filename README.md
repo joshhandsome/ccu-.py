@@ -1,2 +1,4 @@
-# ccu-.py
-教學問卷自動填寫
+須具備chrome瀏覽器
+webdriver
+python selenium
+
