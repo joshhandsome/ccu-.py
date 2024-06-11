@@ -11,7 +11,7 @@ import random
 
     
 
-path="C:\\Users\\josh9\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe"
+path="C:\\Users\\josh9\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe"  #####改為webdriver在你電腦中的路徑
 chrome_options = Options()
 #chrome_options.add_argument("--headless")  # 無頭模式
 chrome_options.add_argument("--disable-gpu")
@@ -100,11 +100,11 @@ driver.find_element(By.ID,"btn1").click()
 driver.implicitly_wait(4)
 
 username_element = driver.find_element(By.ID, "username")
-username_element.send_keys("411530034")
+username_element.send_keys("")  ### 輸入你自己的學號
 driver.implicitly_wait(5)
 time.sleep(random.uniform(4,5))
 password_element=driver.find_element(By.ID, "password")
-password_element.send_keys("Joshhandsome5!")
+password_element.send_keys("")   #####  輸入你自己的密碼
 driver.implicitly_wait(3)
 time.sleep(random.uniform(3, 4))
 # 創建 ActionChains 對象
